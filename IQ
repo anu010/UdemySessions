@@ -1,0 +1,29 @@
+
+
+1. Give me the count of links on the page?
+A: driver.findElements(By.tagName("a")).size();
+
+
+2. count of links only from footer section?
+A: 		limiting webdriver scope means :: creating a mini driver and then getting the links list
+
+		WebElement footerdriver = driver.findElement(By.id(footer section id));
+		footerdriver.findElements(By.tagName("a")).size();
+		
+		
+		
+3. count of links of one column from footer section
+A: WebElement columndriver = footerdriver.findElement(By.xpath("//td//ul"));		
+   coloumndriver.findElements(By.tagName("a")).size();
+		
+4. click on each link in the column and check if the pages are opening		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
